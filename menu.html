@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--lchengz 212359997-->
+
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="domino icon" href="DI.jpg">
+
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>
+
+<!-- Input the header information of the page -->
+<div data-role="page">
+  <div data-role="header">
+    <!-- link to back to main page/refresh-->
+	<a href="main.html" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h2>Welcome To Domino Pizza</h2>
+	<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+	<!-- list views with popup-->
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider">Our Pizza</li>
+      <li>
+        <a href="#">
+        <img src="ChickenCamembert.jpg">
+        <h2>ChickenCamembert</h2>
+        <p>Sliced roast chicken breast, camembert, rasher bacon, cherry tomatoes, baby spinach, red onion topped with hollandaise sauce</p>
+        </a>
+        <a href="#order" data-transition="pop" data-icon="check">Order now</a>
+      </li>
+      <li>
+        <a href="#">
+        <img src="GrandSupreme.jpg">
+        <h2>GrandSupreme</h2>
+        <p>Ground beef, rasher bacon, pepperoni, capsicum, red onion, baby spinach, smoked leg ham, olives, mozzarella</p>
+        </a>
+        <a href="#order" data-transition="pop" data-icon="check">Order now</a>
+      </li>
+	  <li>
+        <a href="#">
+        <img src="Meatlovers.jpg">
+        <h2>Meatlovers</h2>
+        <p>Pulled beef, pepperoni, smoked leg ham, ground beef, rasher bacon, red onion, topped with a Hickory BBQ sauce swirl</p>
+        </a>
+        <a href="#order" data-transition="pop" data-icon="check">Order now</a>
+      </li>
+	  <li>
+        <a href="#">
+        <img src="SHPB.jpg">
+        <h2>Spicy Harissa Pulled Beef</h2>
+        <p>Slow cooked pulled beef, pepperoni, Italian sausage, fresh tomato, red onion, jalapenos topped with chilli flakes & a spicy harissa sauce</p>
+        </a>
+        <a href="#order" data-transition="pop" data-icon="check">Order now</a>
+      </li>
+    </ul>
+	
+	
+	
+	<!-- list views with popup-->
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider">Others</li>
+      <li>
+        <a href="#">
+        <img src="Chicken.jpg">
+        <h2>Chicken Ribs</h2>
+        <p>Mildly spiced, succulent chicken on the bone. Choose from a 5 or 10 pack. Baked fresh to order.</p>
+        </a>
+        <a href="#order" data-transition="pop" data-icon="check">Order now</a>
+      </li>
+      <li>
+        <a href="#">
+        <img src="wings.jpg">
+        <h2>Chicken Wings</h2>
+        <p>4 pack of succulent chicken wings coated with a spicy seasoning.</p>
+        </a>
+        <a href="#order" data-transition="pop" data-icon="check">Order now</a>
+      </li>
+    </ul>	
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>
+
+<div id="contact_buttons">	
+<!-- button to recipes page -->	
+<a href="recipes.html"  data-role="button" data-icon="order" class="ui-btn ui-corner-all ui-icon-shop ui-btn-icon-left"> Check my Order </a>	
+</div>	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>
+<!-- Input the footer information of the page -->
+<div data-role="footer">
+<h1>&Copy lchengz 2015</h1>
+</div>	
+	
+	
+	
+	
+  </div>
+</div> 
+
+<!-- order page/popup -->
+<div data-role="page" id="order" data-dialog="true">
+  <div data-role="main" class="ui-content">
+  <h3>Add to my Order</h3>
+  		<select>
+		<!-- number of orders -->
+		<option value="01">1</option>
+		<option value="02">2</option>
+		<option value="03">3</option>
+		</select>
+    <a href="#" class="ui-btn ui-btn-inline ui-btn-b ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini" data-rel="back">Order</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-inline ui-mini" data-rel="back">Cancel</a>
+  </div>
+</div> 
+
+
+
+
+
+
+</body>
+</html>
